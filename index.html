@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FashionVerse - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+
+    <img id="modalImg">
+    <h2 id="modalTitle"></h2>
+    <h3 id="modalPrice"></h3>
+    <p id="modalDesc"></p>
+  </div>
+</div>
+
+<script>
+function openModal(title, price, desc, imgSrc) {
+  document.getElementById("modalTitle").innerText = title;
+  document.getElementById("modalPrice").innerText = price;
+  document.getElementById("modalDesc").innerText = desc;
+  document.getElementById("modalImg").src = imgSrc;
+  
+  document.getElementById("productModal").style.display = "flex";
+}
+
+function closeModal() {
+  document.getElementById("productModal").style.display = "none";
+}
+</script>
+
+<body>
+  <header>
+    <h1>FashionVerse</h1>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="berita.html">Berita</a>
+      <a href="contact.html">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Tampil Stylish dengan Pakaian Tradisional Setiap Hari!</h2>
+    <p>Koleksi tren fashion etnik terkini.</p>
+    <a href="berita.html" class="btn">Lihat Tren</a>
+  </section>
+
+ <section class="produk">
+  <h2>Koleksi Terbaru</h2>
+
+  <div class="horizontal-list">
+
+   <div class="product">
+  <img src="dree.jpg" alt="">
+  <h3>Dress Batik Modern</h3>
+  <p>Rp 299.000</p>
+  <a 
+    href="https://wa.me/6285290816600?text=Halo%20kak,%20aku%20mau%20order%20Dress%20Batik" 
+    class="order-btn" 
+    target="_blank"
+  >
+    Order via WhatsApp
+  </a>
+</div>
+
+<div class="product">
+  <img src="kby.jpg" alt="">
+  <h3>Kebaya Kutu Baru</h3>
+  <p>Rp 195.000</p>
+  <a 
+    href="https://wa.me/6285290816600?text=Halo%20kak,%20aku%20mau%20order%20Kebaya%20Kutu&20Baru"
+    class="order-btn" 
+    target="_blank"
+  >
+    Order via WhatsApp
+  </a>
+</div>
+
+<div class="product">
+  <img src="llt.jpg" alt="">
+  <h3>Rok Lilit Batik</h3>
+  <p>Rp 105.000</p>
+  <a 
+    href="https://wa.me/6285290816600?text=Halo%20kak,%20aku%20mau%20order%20Rok%20Lilit&20Batik" 
+    class="order-btn" 
+    target="_blank"
+  >
+    Order via WhatsApp
+  </a>
+
+<div class="horizontal-list">
+
+ <div class="product">
+  <img src="set.jpg" alt="">
+  <h3>Set Kebaya</h3>
+  <p>Rp 699.000</p>
+  <a 
+    href="https://wa.me/6285290816600?text=Halo%20kak,%20aku%20mau%20order%20Set%20Kebaya" 
+    class="order-btn" 
+    target="_blank"
+  >
+    Order via WhatsApp
+  </a>
+
+<div class="product">
+  <img src="shirt.jpg" alt="">
+  <h3>Kemeja Batik</h3>
+  <p>Rp 295.000</p>
+  <a 
+    href="https://wa.me/6285290816600?text=Halo%20kak,%20aku%20mau%20order%20Kemeja%20Batik"
+    class="order-btn" 
+    target="_blank"
+  >
+    Order via WhatsApp
+  </a>
+</div>
+
+<div class="product">
+  <img src="cln.jpg" alt="">
+  <h3>Celana Batik</h3>
+  <p>Rp 80.000</p>
+  <a 
+    href="https://wa.me/6285290816600?text=Halo%20kak,%20aku%20mau%20order%20Celana&20Batik" 
+    class="order-btn" 
+    target="_blank"
+  >
+    Order via WhatsApp
+  </a>
+</div>
+
+
+</section>
+
+  <footer>
+    <p>© 2025 FashionVerse | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
